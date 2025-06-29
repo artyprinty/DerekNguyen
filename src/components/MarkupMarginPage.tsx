@@ -36,12 +36,10 @@ const MarkupMarginPage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {(markup || margin) && (
-        <div className="space-y-2">
-          <div><strong>Mark-up %:</strong> {markup}</div>
-          <div><strong>Gross Margin %:</strong> {margin}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Mark-up %:</strong> {markup}</div>
+        <div><strong>Gross Margin %:</strong> {margin}</div>
+      </div>
     </div>
   );
 };

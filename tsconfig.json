@@ -14,8 +14,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@articles/*": ["apps/articlescharts2025/src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "apps/articlescharts2025/src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 } 

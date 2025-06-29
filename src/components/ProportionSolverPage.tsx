@@ -56,11 +56,9 @@ const ProportionSolverPage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {result && (
-        <div className="space-y-2">
-          <div><strong>Solved Value:</strong> {result}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Solved Value:</strong> {result}</div>
+      </div>
     </div>
   );
 };

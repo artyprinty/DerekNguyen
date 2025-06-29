@@ -33,7 +33,7 @@ const BreakdownPercentPage = () => {
         {percents.map((p, i) => (
           <div key={i} className="flex gap-2 items-center">
             <input type="number" value={p} onChange={e => handlePercentChange(i, e.target.value)} placeholder="%" className="border rounded px-3 py-2 w-1/2" />
-            <span className="w-1/2">{!isNaN(percentValues[i]) && !isNaN(numTotal) ? ((numTotal * percentValues[i] / 100).toFixed(2)) : ''}</span>
+            <span className="w-1/2"><strong>Part {i + 1}:</strong> {!isNaN(percentValues[i]) && !isNaN(numTotal) ? ((numTotal * percentValues[i] / 100).toFixed(2)) : ''}</span>
             <button onClick={() => removeRow(i)} className="text-red-500 px-2">✕</button>
           </div>
         ))}

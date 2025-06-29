@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "id": "budget",
+      "name": "Budget & Finance",
+      "description": "Articles about budget analysis, financial policies, and economic impact",
+      "icon": "💰",
+      "tags": ["US Budget", "Tax Policy", "Spending"]
+    },
+    {
+      "id": "policy",
+      "name": "Policy Analysis",
+      "description": "In-depth analysis of government policies and their implications",
+      "icon": "📋",
+      "tags": ["Congress", "Policy", "Legislation"]
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "description": "Economic trends, forecasts, and analysis",
+      "icon": "📊",
+      "tags": ["Economy", "Markets", "Forecasting"]
+    }
+  ]
+} 

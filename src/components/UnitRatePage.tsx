@@ -36,11 +36,9 @@ const UnitRatePage = () => {
           <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
         </div>
       </div>
-      {unitRate && (
-        <div className="space-y-2">
-          <div><strong>Unit Rate:</strong> {unitRate}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Unit Rate:</strong> {unitRate}</div>
+      </div>
     </div>
   );
 };

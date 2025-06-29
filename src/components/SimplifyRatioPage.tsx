@@ -42,13 +42,11 @@ const SimplifyRatioPage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {simplified && (
-        <div className="space-y-2">
-          <div><strong>Simplified Ratio (A:B):</strong> {simplified}</div>
-          <div><strong>Fraction:</strong> {fraction}</div>
-          <div><strong>GCD:</strong> {divisor}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Simplified Ratio (A:B):</strong> {simplified}</div>
+        <div><strong>Fraction:</strong> {fraction}</div>
+        <div><strong>GCD:</strong> {divisor}</div>
+      </div>
     </div>
   );
 };

@@ -38,13 +38,11 @@ const DifferenceCalculatorPage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {absDiff && (
-        <div className="space-y-2">
-          <div><strong>Absolute Difference:</strong> {absDiff}</div>
-          <div><strong>Directional (A - B):</strong> {dirDiff}</div>
-          <div><strong>Percent Difference:</strong> {percentDiff}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Absolute Difference:</strong> {absDiff}</div>
+        <div><strong>Directional (A - B):</strong> {dirDiff}</div>
+        <div><strong>Percent Difference:</strong> {percentDiff}</div>
+      </div>
     </div>
   );
 };

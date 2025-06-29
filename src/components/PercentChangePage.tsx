@@ -40,14 +40,12 @@ const PercentChangePage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {percentChange && (
-        <div className="space-y-2">
-          <div><strong>Percent Change:</strong> {percentChange} <span className={label.includes('Increase') ? 'text-green-600' : label.includes('Decrease') ? 'text-red-600' : ''}>{label}</span></div>
-          <div className="w-full bg-gray-200 rounded h-4">
-            <div className={`h-4 rounded ${label.includes('Increase') ? 'bg-green-400' : label.includes('Decrease') ? 'bg-red-400' : 'bg-gray-400'}`} style={{ width: `${Math.min(barPercent, 100)}%` }} />
-          </div>
+      <div className="space-y-2">
+        <div><strong>Percent Change:</strong> {percentChange} <span className={label.includes('Increase') ? 'text-green-600' : label.includes('Decrease') ? 'text-red-600' : ''}>{label}</span></div>
+        <div className="w-full bg-gray-200 rounded h-4">
+          <div className={`h-4 rounded ${label.includes('Increase') ? 'bg-green-400' : label.includes('Decrease') ? 'bg-red-400' : 'bg-gray-400'}`} style={{ width: `${Math.min(barPercent, 100)}%` }} />
         </div>
-      )}
+      </div>
     </div>
   );
 };

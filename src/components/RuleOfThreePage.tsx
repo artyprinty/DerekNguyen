@@ -44,11 +44,9 @@ const RuleOfThreePage = () => {
         <span className="self-center">D</span>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {result && (
-        <div className="space-y-2">
-          <div><strong>D:</strong> {result}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>D:</strong> {result}</div>
+      </div>
     </div>
   );
 };

@@ -64,16 +64,10 @@ const PercentOfTotalPage = () => {
           </div>
         </div>
       )}
-      {!reverseMode && result && (
-        <div className="space-y-2">
-          <div><strong>Percent of Total:</strong> {result}</div>
-        </div>
-      )}
-      {reverseMode && autoPart && (
-        <div className="space-y-2">
-          <div><strong>Part:</strong> {autoPart}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        {!reverseMode && <div><strong>Percent of Total:</strong> {result}</div>}
+        {reverseMode && <div><strong>Part:</strong> {autoPart}</div>}
+      </div>
     </div>
   );
 };

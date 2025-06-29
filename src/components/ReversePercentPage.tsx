@@ -34,11 +34,9 @@ const ReversePercentPage = () => {
         </div>
         <button onClick={handleSwap} className="text-blue-600 px-2">⇄</button>
       </div>
-      {original && (
-        <div className="space-y-2">
-          <div><strong>Original Value:</strong> {original}</div>
-        </div>
-      )}
+      <div className="space-y-2">
+        <div><strong>Original Value:</strong> {original}</div>
+      </div>
     </div>
   );
 };

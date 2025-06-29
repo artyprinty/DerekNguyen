@@ -10,8 +10,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'),
-      '@articles': resolve(__dirname, './apps/articlescharts2025/src')
+      '@': resolve(__dirname, './src')
     }
+  },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true
   }
 }) 
