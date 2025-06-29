@@ -31,7 +31,7 @@ import GroupComparisonBoxplotDashboard from './components/GroupComparisonBoxplot
 import TwoNumberCalculator from './components/TwoNumberCalculator'
 import ExtrapolationDashboard from './components/ExtrapolationDashboard'
 import ExtrapolationPage from './components/ExtrapolationPage'
-import ArticlesCharts2025 from '@articles/App'
+// import ArticlesCharts2025 from '@articles/App'
 import AllCalculatorsPage from './components/AllCalculatorsPage'
 import WhatIfCalculatorsPage from './components/WhatIfCalculatorsPage'
 import LiveMarketingMathPage from './components/LiveMarketingMathPage'
@@ -87,7 +87,7 @@ function App() {
             <Route index element={<Navigate to="extrapolation-calculator" replace />} />
             <Route path="extrapolation-calculator" element={<ExtrapolationDashboard />} />
           </Route>
-          <Route path="articles/*" element={<ArticlesCharts2025 />} />
+          {/* <Route path="articles/*" element={<ArticlesCharts2025 />} /> */}
           <Route path="live-marketing-math" element={<LiveMarketingMathPage />}>
             <Route index element={<Navigate to="whatif-marketing-math" replace />} />
             <Route path="whatif-marketing-math" element={<WhatIfMarketingMathPage />} />
