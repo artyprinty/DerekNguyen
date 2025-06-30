@@ -39,7 +39,7 @@ import StatisticalAnalysisPage from './components/StatisticalAnalysisPage'
 
 function App() {
   return (
-    <Router basename="/converters">
+    <Router basename="/DerekNguyen">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/currency" replace />} />
